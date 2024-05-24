@@ -31,17 +31,17 @@
                     },
                     "antecedent": {
                         "type": ["string", "null"],
-                        "enum": ["Loud Noise", "High Demand Task", "Change in Routine", "Social Demand", null, "others"],
+                        "enum": ["Loud Noise", "High Demand Task", "Change in Routine", "Social Demand", "others"],
                         "description": "Triggering events and context of the behavior"
                     },
                     "behavior": {
                         "type": ["string", "null"],
-                        "enum": ["Yelling/Crying", "Physical Aggression", "Non-compliance", "Self-harm", "Collapses", null, "others"],
+                        "enum": ["Yelling/Crying", "Physical Aggression", "Non-compliance", "Self-harm", "Collapses", "others"],
                         "description": "The specific behavior observed and recorded"
                     },
                     "consequence": {
                         "type": ["string", "null"],
-                        "enum": ["Peer Reaction", "Loss of Privileges", "Teacher Intervention", "Hyposensory Room", null, "others"],
+                        "enum": ["Peer Reaction", "Loss of Privileges", "Teacher Intervention", "Hyposensory Room", "others"],
                         "description": "Immediate consequence of the behavior"
                     }
                 },
