@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://connectproject.github.io/schemas/abcRecord.schema.json", 
+    "$id": "http://connectproject.github.io/schemas/abcRecord.schema.v1.json", 
     "title": "ABC Records",
     "description": "Antecedent (A), Behavior (B) and Consequence (C) records for behavior management",
     "type": "object",
