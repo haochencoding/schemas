@@ -20,6 +20,7 @@
         "abcRecords": {
             "type": "array",
             "items":{
+                "type": "object",
                 "properties": {
                     "startTimestamp": {
                         "type": "number",
