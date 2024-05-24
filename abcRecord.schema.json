@@ -23,11 +23,13 @@
                 "type": "object",
                 "properties": {
                     "startTimestamp": {
-                        "type": "number",
+                        "type": "string",
+                        "format": "date-time",
                         "description":  "Start time of behavior"
                     },
                     "endTimestamp": {
-                        "type": "number",
+                        "type": "string",
+                        "format": "date-time",
                         "description":  "End time of behavior"
                     },
                     "antecedent": {
