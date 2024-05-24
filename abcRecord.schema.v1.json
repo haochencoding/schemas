@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://connectproject.github.io/schemas/abcRecord.schema.json", 
+    "title": "ABC Records",
+    "description": "Antecedent (A), Behavior (B) and Consequence (C) records for behavior management",
+    "type": "object",
+    "properties": {
+        "applicationId": {
+            "type": "string",
+            "description": "Unique Connect identifier of the app originating the event. Read-only (added by Connect)"
+        },
+        "userId": {
+            "type": "string",
+            "description": "Unique Connect identifier of the user originating the event. Read-only (added by Connect)"
+        },
+        "sessionId": {
+            "type": "string",
+            "description": "Identifier of the session originating the event"
+        },
+        "abcRecords": {
+            "type": "array",
+            "items":{
+                "properties": {
+                    "startTimestamp": {
+                        "type": "number",
+                        "description":  "Start time of behavior"
+                    },
+                    "endTimestamp": {
+                        "type": "number",
+                        "description":  "End time of behavior"
+                    },
+                    "antecedent": {
+                        "type": "string",
+                        "description": "Triggering events and context of the behavior"
+                    },
+                    "behavior": {
+                        "type": "string",
+                        "description": "The specific behavior observed and recorded"
+                    },
+                    "consequence": {
+                        "type": "string",
+                        "description": "Immediate consequence of the behavior"
+                    }
+                },
+                "required": [
+                    "startTimestamp",
+                    "endTimestamp"
+                ],
+                "additionalProperties": false
+            }            
+        }
+    },
+    "required": [
+        "sessionId",
+        "abcRecords"
+    ],
+    "additionalProperties": false
+}
